@@ -35,7 +35,7 @@ const serverHandle = (req, res) => {
 
     // 获取 Path
     const url = req.url;
-    req.path = path = url.split('?')[0];
+    req.path = url.split('?')[0];
 
     // 解析 query
     req.query = querystring.parse(url.split('?')[1])
